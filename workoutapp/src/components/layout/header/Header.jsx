@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 
 import React from 'react'
 import { useAuth } from '../../../hooks/useAuth'
-import {FiArrowLeft} from 'react-icons/fi'
+import {IoMdArrowBack} from 'react-icons/io'
 import Hamburger from '../hamburger/Hamburger'
  
 const Header = ({backLink}) => {
@@ -11,7 +11,7 @@ const Header = ({backLink}) => {
     
     <header className={styles.header}>
         <button onClick={()=>{}}>
-            <FiArrowLeft/> 
+            <IoMdArrowBack fill = '#fff' fontSize={29}/> 
         </button>
 
         <Hamburger/>
