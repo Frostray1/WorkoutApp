@@ -9,14 +9,15 @@
 		border: none;
 		outline: none;
 		cursor: pointer;
-
-		
 	}
 
-	>button {
+	> button {
 		font-size: 30px;
-		>svg > path {
-			fill: #fff;
+
+		> svg {
+			> path {
+				fill: #fff;
+			}
 		}
 	}
 
@@ -26,7 +27,7 @@
 		right: 0;
 		background-color: #fff;
 		padding: 10px 12px;
-		font-size: 14px;
+		font-size: 16px;
 		box-shadow: $bx-16;
 		border-radius: 10px 0 10px 10px;
 		min-width: 116px;
@@ -39,6 +40,10 @@
 
 		> ul {
 			list-style: none;
+
+			button {
+				font-size: 16px;
+			}
 
 			a {
 				color: #000;
