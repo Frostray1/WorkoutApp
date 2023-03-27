@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
@@ -8,6 +7,7 @@ import {
 } from '@tanstack/react-query'
 import './assets/styles/index.scss'
 import Router from './routes/Routes'
+import AuthProvider from './providers/AuthProvider'
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -20,7 +20,9 @@ const queryClient = new QueryClient({
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<QueryClientProvider client={queryClient}>
-			<Router />
+			<AuthProvider>
+				<Router />
+			</AuthProvider>
 		</QueryClientProvider>
 	</React.StrictMode>
 )
